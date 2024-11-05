@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.FormularioGastoController" spacing="10" alignment="CENTER" prefWidth="300">
+    <Label text="Formulario Gasto" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+    <GridPane hgap="10" vgap="10">
+        <Label text="Categoría:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtCategoria" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="Monto:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtMonto" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Label text="Fecha:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtFecha" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    </GridPane>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Guardar" onAction="#guardarGasto"/>
+        <Button text="Cancelar" onAction="#cancelar"/>
+    </HBox>
+</VBox>

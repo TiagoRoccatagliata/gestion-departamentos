@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.MainController" spacing="10" alignment="CENTER">
+    <TableView fx:id="tableDepartamentos" prefHeight="400" prefWidth="600">
+        <columns>
+            <TableColumn text="ID" fx:id="colId" prefWidth="50"/>
+            <TableColumn text="Ubicación" fx:id="colUbicacion" prefWidth="150"/>
+            <TableColumn text="Precio de Compra" fx:id="colPrecioCompra" prefWidth="150"/>
+            <TableColumn text="Precio Estimado de Venta" fx:id="colPrecioEstimadoVenta" prefWidth="150"/>
+            <TableColumn text="Estado de Remodelación" fx:id="colEstadoRemodelacion" prefWidth="150"/>
+            <TableColumn text="Rentabilidad Deseada" fx:id="colRentabilidadDeseada" prefWidth="150"/>
+        </columns>
+    </TableView>
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Agregar" onAction="#onAgregarDepartamento"/>
+        <Button text="Editar" onAction="#onEditarDepartamento"/>
+        <Button text="Eliminar" onAction="#onEliminarDepartamento"/>
+    </HBox>
+</VBox>
